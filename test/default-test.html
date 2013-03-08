@@ -7,7 +7,9 @@
 		<script type='text/javascript' src='../build/lock.js'></script>
 		<script type='text/javascript'>
 			window.showLockLayer = function showLockLayerFor5Seconds(){
+				lab.lock.use(lab.lock.template.loader);
 				lab.lock.show();
+				// ... action ...
 				window.setTimeout(lab.lock.hide, 3000);
 			};
 		</script> 
