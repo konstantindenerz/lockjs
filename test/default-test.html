@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test page that should be used to see the first result</title>
+		<script type='text/javascript' src='../build/lock.js'></script>
+		<script type='text/javascript'>
+			window.showLockLayer = function showLockLayerFor5Seconds(){
+				lab.lock.show();
+				window.setTimeout(lab.lock.hide, 3000);
+			};
+		</script> 
+	</head>
+	<body>
+		<button onclick='showLockLayer()'>Show lock layer for 3 seconds</button>
+		<h1>lock.js</h1>
+		<h2>Lock layer for web UI.</h2>
+		<img src='http://octodex.github.com/images/octobiwan.jpg'>
+	</body>
+</html>
+

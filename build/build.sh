@@ -1,0 +1,1 @@
+coffee --join lock.js -o ./ -cw ../src/
