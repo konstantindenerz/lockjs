@@ -8,23 +8,29 @@
     w.lab = {};
   }
 
+  layer = null;
+
   w.lab.lock = {
     show: function() {
-      var layer;
-      if (typeof layer !== "undefined" && layer !== null) {
+      if (!layer) {
         layer = factory.init();
       }
-      return console.log('show');
+      layer.show();
+      return this;
     },
     hide: function() {
-      return console.log('hide');
+      if (layer) {
+        layer.hide();
+      }
+      return this;
     }
   };
 
-  layer = null;
-
   factory = {
-    init: function() {}
+    init: function() {
+      layer = $('<div>').appendTo('body');
+      return layer.addClass('lab-lock-layer');
+    }
   };
 
 }).call(this);
