@@ -1,6 +1,9 @@
 # Definition of namespaces
 w = window
-w.lab = {} if not lab
+w.lab = {} if not window.lab
 w.lab.lock =
-	show: 
+	show: ->
+		console.log('show');
+	hide: ->
+		console.log('hide');
 

@@ -4,10 +4,17 @@
 
   w = window;
 
-  if (!lab) {
+  if (!window.lab) {
     w.lab = {};
   }
 
-  w.lab.lock = {};
+  w.lab.lock = {
+    show: function() {
+      return console.log('show');
+    },
+    hide: function() {
+      return console.log('hide');
+    }
+  };
 
 }).call(this);
