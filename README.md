@@ -27,3 +27,6 @@ You can use the build/build.sh script to build the CoffeeScript files. The resul
 
 * Usage of default template:
 ```lab.lock.use(lab.lock.template.loader);```
+
+
+:copyright: 2013 Konstantin Denerz
