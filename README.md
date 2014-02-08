@@ -20,14 +20,20 @@ You can use the build/build.sh script to build the CoffeeScript files. The resul
 ### Usage
 
 * Show lock layer:
-```lab.lock.show();```
+```
+lab.lock.show();
+```
 
 * Hide lock layer:
-```lab.lock.hide();```
+```
+lab.lock.hide();
+```
 
 
 * Usage of default template:
-```lab.lock.use(lab.lock.template.loader);```
+```
+lab.lock.use(lab.lock.template.loader);
+```
 
 
 :copyright: 2013 Konstantin Denerz
